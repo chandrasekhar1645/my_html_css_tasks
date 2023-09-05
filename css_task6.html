@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 75vh;
+        }
+        label {
+            font-weight: bold;
+            padding: 5px;
+        }
+        input {
+            display: block;
+            width: 300px;
+            padding: 5px;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+        button {
+            color: white;
+            background-color: rgb(23, 148, 11);
+            width: 310px;
+            margin-top: 10px;
+            padding: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+        input[type="checkbox"]{
+            display: inline-block;
+            width: auto;
+            margin-top: 10px;
+        }
+        button[type="cancel"]{
+            display: inline-block;
+            width: auto;
+            margin-top: 10px;
+            margin-right: 150px;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+        }
+
+        .forgot-password { 
+            align-items: right;
+            text-align: right;
+            background-color: rgb(231, 228, 228);
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <center><img src="profile.png" alt="profile picture"><br></center>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username" placeholder="Enter Username">
+        <label for="password">Password</label>
+        <input type="text" name="password" id="password" placeholder="Enter Password">
+        <button type="submit">Login</button><br>
+        <input type="checkbox" checked>Remember me<br>
+        <div class="forgot-password"><button type="cancel">Cancel</button>Forgot <a href="#password">password?</a></div>
+    </form>
+</body>
+</html>

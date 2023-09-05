@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        label{
+    width: 200px;
+    display: inline-block;
+    margin-bottom: 10px;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 75vh;
+        }
+        button{
+            width: 75%;
+            padding: 10px;
+        }
+        label{
+            margin-top:20px;
+            color:white;
+        }
+        #container1{
+            background-color: rgb(172, 6, 111);
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        #container2{
+            background-color: rgba(130, 3, 83, 0.937);
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        #color{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="container1">
+    <div id="container2">
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email"><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="number" id="phone" name="phone"><br>
+        <div id="color">
+        <label for="gender">Gender:</label>
+        Male<input type="radio" name="gender" value="male">Female
+        <input type="radio" name="gender" value="Female">Others
+        <input type="radio" name="other" value="other"><br>
+    </div>
+        <label for="languages">language</label>
+        <select name="languages" id="languages">
+            <option value="0">Select language</option>
+        </select><br>
+
+        <label for="zip">Zip Code</label>
+        <input type="number" id="zip" name="zip"><br>
+
+        <label for="about">About</label>
+        <textarea rows="2" cols="20" id="about" name="about" placeholder="write about yourself.."></textarea><br>
+
+        <center><button type="submit"><b>Register</b></button></center>
+    </form>
+</div>
+</div>
+</body>
+</html>
